@@ -23,7 +23,6 @@
     "gulp-rename": "^1.2.0",
     "gulp-replace": "^0.4.0",
     "gulp-uglify": "^1.0.1",
-    "rangle-gulp": "0.0.7",
     "semver": "^4.1.0"
   },
   "devDependencies": {
