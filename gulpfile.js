@@ -24,12 +24,12 @@ var karmaFiles = [
   'src/**/*.js'
 ];
 
-rg.setLogLevel('info');
+rg.setLogLevel('verbose');
 
 gulp.task('karma', rg.karma({
   files: karmaFiles,
   vendor: karmaVendorFiles,
-  karmaConf: 'testing/karma-ci.conf.js'
+  karmaConf: 'testing/karma.conf.js'
 }));
 
 gulp.task('karma-ci', rg.karma({
@@ -39,8 +39,8 @@ gulp.task('karma-ci', rg.karma({
 }));
 
 gulp.task('karma-watch', rg.karmaWatch({
-  files: karmaFiles,
-  vendor: karmaVendorFiles,
+  //files: karmaFiles,
+  //vendor: karmaVendorFiles,
   karmaConf: 'testing/karma.conf.js'
 }));
 
